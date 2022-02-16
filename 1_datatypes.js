@@ -32,6 +32,15 @@ var Numeros=[1,2,3,4,5];
 var Numeros1=[1,2,3,4,5];
 
 console.log("arrays: " + Numeros==Numeros1);
+
+for (let i = 0; i < Numeros.length; i++) {
+    for (let j = 0; j < Numeros1.length; j++) {
+        if(Numeros[i]==Numeros1[j]){
+            console.log("Iguales")
+        }
+    }
+    
+}
 // crear un objeto "usuario", con tres propiedades
 
 /* Operaciones con números */
