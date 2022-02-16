@@ -39,23 +39,37 @@ for (let i = 0; i < Numeros.length; i++) {
             console.log("Iguales")
         }
     }
-    
 }
 //crear dos arrays con el mismo contenido y comparar con "==" si ambos arrays son iguales
 
 // crear un objeto "usuario", con tres propiedades
+var coche = new Object();
+coche.marca = 'Ford';
+coche.modelo = 'Mustang';
+coche.año = 1969;
 
 /* Operaciones con números */
 //crear una constante para la gravedad y redondearla con el método Math.round
-
+var GRAVEDAD=9.80665;
+console.log(Math.round(GRAVEDAD));
 //incrementar una variable con otra variable con el operador  =+
-
+var incremetar=10;
+incremetar+=10;
+console.log(incremetar);
 //eleva un número a otro utilizando **
-
+var h2;
+h2=2**4;
+console.log(h2);
 //eleva un número a otro utilizando un bucle
-
+var h3=2;
+var aux=h3;
+for (let i = 0; i<3; i++) {
+    h3=h3*aux;
+}
+console.log(h3);
 // generar un número aleatorio del 0 al 100
-
+var aleatorio=Math.random()*10
+console.log(aleatorio);
 // genera un array de 10 números aleatorios del 0 al 100 y muestra el máximo y mínimo
 
 // lo mismo que el anterior, pero usando las funciones Math.min y Math.max
