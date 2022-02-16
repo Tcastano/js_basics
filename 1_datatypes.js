@@ -30,6 +30,8 @@ console.log(string===int);
 //crear dos arrays con el mismo contenido y comparar si ambos arrays son iguales
 var Numeros=[1,2,3,4,5];
 var Numeros1=[1,2,3,4,5];
+
+console.log("arrays: " + Numeros==Numeros1);
 // crear un objeto "usuario", con tres propiedades
 
 /* Operaciones con números */
