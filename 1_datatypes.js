@@ -41,6 +41,8 @@ for (let i = 0; i < Numeros.length; i++) {
     }
     
 }
+//crear dos arrays con el mismo contenido y comparar con "==" si ambos arrays son iguales
+
 // crear un objeto "usuario", con tres propiedades
 
 /* Operaciones con números */
