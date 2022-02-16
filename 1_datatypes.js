@@ -42,6 +42,8 @@ for (let i = 0; i < Numeros.length; i++) {
 }
 //crear dos arrays con el mismo contenido y comparar con "==" si ambos arrays son iguales
 
+//ahora comparar el contenido de dichos arrays utilizando un bucle
+
 // crear un objeto "usuario", con tres propiedades
 var coche = new Object();
 coche.marca = 'Ford';
@@ -50,12 +52,9 @@ coche.año = 1969;
 
 /* Operaciones con números */
 //crear una constante para la gravedad y redondearla con el método Math.round
-var GRAVEDAD=9.80665;
-console.log(Math.round(GRAVEDAD));
-//incrementar una variable con otra variable con el operador  =+
-var incremetar=10;
-incremetar+=10;
-console.log(incremetar);
+
+//incrementar una variable con otra variable o número con el operador  +=, mostrar por pantalla la primera variable (la incrementada)
+
 //eleva un número a otro utilizando **
 var h2;
 h2=2**4;
