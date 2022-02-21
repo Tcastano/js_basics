@@ -67,19 +67,34 @@ for (let i = 0; i<3; i++) {
 }
 console.log(h3);
 // generar un número aleatorio del 0 al 100
-var aleatorio=Math.random()*10
+var aleatorio=Math.random()*100;
 console.log(aleatorio);
 // genera un array de 10 números aleatorios del 0 al 100 y muestra el máximo y mínimo
-
+//var aleatorioarray;
+//var arrayaleatorio;
+//for (let i = 0; i < array.length; i++) {
+  //  const element = array[i];
+    
+//}
 // lo mismo que el anterior, pero usando las funciones Math.min y Math.max
 
 /* Operaciones con strings */
 //crear una cadena de caracteres y convertirla a mayúsculas y minúsculas con los métodos predeterminados destinados para ello
+ var cadena ="TiZZiano";
+var cadenamayuscula=cadena.toUpperCase();
+console.log(cadenamayuscula);
+
+var cadenaminusculas =cadena.toLowerCase();
+console.log(cadenaminusculas);
 
 //reemplazar Pascal por Javascript en la frase "Pascal es un lenguaje de programación moderno"
-
+    var frase=("Pascal es un lenguaje de programación moderno")
+    console.log(frase.replace('Pascal','Javascript'));
 //crear una variable con frase/cadena de caracteres y comprobar la longitud
-
+ console.log(frase.length);
 //eliminar "script" de la palabra Javascript con el método substr
-
+    var palabra="Javascript";
+    console.log(palabra.substr(-10,4));
 //comprueba si la frase "Espero que esto me sirva para algo" contiene la palabra "algo"
+var frase1="Espero que esto me sirva para algo";
+console.log(frase1.includes('algo'));
