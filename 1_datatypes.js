@@ -27,55 +27,63 @@ if(string==int){
 
 //utilizar las mismas variables del ejercicio anterior y realizar una comparación estricta
 console.log(string===int);
-//crear dos arrays con el mismo contenido y comparar si ambos arrays son iguales
+
+//crear dos arrays con el mismo contenido y comparar con "==" si ambos arrays son iguales
 var Numeros=[1,2,3,4,5];
 var Numeros1=[1,2,3,4,5];
 
+
 console.log("arrays: " + Numeros==Numeros1);
-
-for (let i = 0; i < Numeros.length; i++) {
-    for (let j = 0; j < Numeros1.length; j++) {
-        if(Numeros[i]==Numeros1[j]){
-            console.log("Iguales")
-        }
-    }
-}
-//crear dos arrays con el mismo contenido y comparar con "==" si ambos arrays son iguales
-
 //ahora comparar el contenido de dichos arrays utilizando un bucle
 
+console.log("ARRAYS BUCLE")
+
+var aux=true;
+for (let i = 0; i < Numeros.length; i++) {
+        if(Numeros[i]!=Numeros1[i]){
+            aux=false
+        }
+}
+ console.log(aux)
 // crear un objeto "usuario", con tres propiedades
-var coche = new Object();
-coche.marca = 'Ford';
-coche.modelo = 'Mustang';
-coche.año = 1969;
+
+var persona = new Object();
+persona.nombre = 'pepe';
+persona.apellido = 'Perez';
+persona.email = 'example@gmail.com';
+
+console.log(persona);
 
 /* Operaciones con números */
 //crear una constante para la gravedad y redondearla con el método Math.round
-
+    
+    const GRAVEDAD =9.81;
+    console.log(Math.round(GRAVEDAD));
 //incrementar una variable con otra variable o número con el operador  +=, mostrar por pantalla la primera variable (la incrementada)
+    var numero=0;
+    var numero1=2;
 
+    numero+=numero1;
+    console.log(numero)
 //eleva un número a otro utilizando **
 var h2;
 h2=2**4;
 console.log(h2);
 //eleva un número a otro utilizando un bucle
-var h3=2;
-var aux=h3;
-for (let i = 0; i<3; i++) {
-    h3=h3*aux;
+console.log("BUCLE")
+var base=2;
+var exponente=3;
+var resultado=1;
+
+for (let i = 0; i<exponente; i++) {
+    resultado*=base;
 }
-console.log(h3);
+console.log(resultado);
 // generar un número aleatorio del 0 al 100
 var aleatorio=Math.random()*100;
 console.log(aleatorio);
 // genera un array de 10 números aleatorios del 0 al 100 y muestra el máximo y mínimo
-//var aleatorioarray;
-//var arrayaleatorio;
-//for (let i = 0; i < array.length; i++) {
-  //  const element = array[i];
-    
-//}
+
 // lo mismo que el anterior, pero usando las funciones Math.min y Math.max
 
 /* Operaciones con strings */
