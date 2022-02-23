@@ -97,7 +97,7 @@ var min=100;
             min=num
         }
     }
-    console.log(max+"minimo "+min)
+    console.log("maximo"+max+"\nminimo "+min)
 // lo mismo que el anterior, pero usando las funciones Math.min y Math.max
    console.log("maximo con metodo es: "+Math.max(...arrayAleatorio));
    console.log("minimo con metodo es: "+Math.min(...arrayAleatorio))
