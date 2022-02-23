@@ -83,9 +83,24 @@ console.log(resultado);
 var aleatorio=Math.random()*100;
 console.log(aleatorio);
 // genera un array de 10 números aleatorios del 0 al 100 y muestra el máximo y mínimo
-
+var arrayAleatorio=[];
+var max=0;
+var min=100;
+    for (let i = 0; i < 10; i++) {
+        var num=Math.random()*100
+        arrayAleatorio[i]=num;
+        
+        if (max<num) {
+            max=num;
+        }
+        if (min>num) {
+            min=num
+        }
+    }
+    console.log(max+"minimo "+min)
 // lo mismo que el anterior, pero usando las funciones Math.min y Math.max
-
+   console.log("maximo con metodo es: "+Math.max(...arrayAleatorio));
+   console.log("minimo con metodo es: "+Math.min(...arrayAleatorio))
 /* Operaciones con strings */
 //crear una cadena de caracteres y convertirla a mayúsculas y minúsculas con los métodos predeterminados destinados para ello
  var cadena ="TiZZiano";
